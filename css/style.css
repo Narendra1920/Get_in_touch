@@ -246,7 +246,7 @@ button {
 
 .sidenav {
     height: 50%;
-  max-width: 70vh;
+  max-width: 30vh;
     position: fixed;
     z-index: 1;
     top: 0;
